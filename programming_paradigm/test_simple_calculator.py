@@ -25,7 +25,7 @@ class TestSimpleCalculator(unittest.TestCase):
         """Create a calculator instance before each test."""
         self.calc = SimpleCalculator()
 
-    def test_add(self):
+    def test_addition(self):
         self.assertEqual(self.calc.add(3, 2), 5)
         self.assertEqual(self.calc.add(-1, -1), -2)
         self.assertEqual(self.calc.add(-1, 1), 0)
