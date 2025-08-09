@@ -1,26 +1,20 @@
+# book_class.py
+
 class Book:
-    def __init__(self, title, author, year):
-      """Constructor: Initializes the Book attributes"""
-      self.title = title
-      self.author = author
-      self.year = year
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+        print(f"Book '{self.title}' by {self.author} has been created.")
 
-
-    def __del__ (self):
-       """Destructor: Called when the object is deleted"""
-       print(f"Deleting {self.title}")
-
+    def __del__(self):
+        print(f"Book '{self.title}' is being deleted.")
 
     def __str__(self):
-       """User-friendly representation"""
-       return f"{self.title} by {self.author}, published in {self.year}"
-    
+        return f"'{self.title}' by {self.author}"
 
-    
     def __repr__(self):
-        """Official representation - can be used to recreate the object"""
-        return f"Book('{self.title}', '{self.author}', {self.year})"
-    
+        return f"Book(title='{self.title}', author='{self.author}')"
+
           
 
 
